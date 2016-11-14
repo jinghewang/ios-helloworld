@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Dog.h"
 
 @interface ViewController ()
 
@@ -39,6 +40,10 @@
 - (void)onClick3:(id)sender{
     [self testFunc:@"wjh" age:25];
     
+    Dog *dog=[Dog alloc];
+    [[dog initWithName:@"wjh--23"] getName];
+    
+    
 }
 
 
@@ -58,8 +63,7 @@
 }
 
 - (void)testFunc:(NSString * )name age:(NSInteger)age{
- 
-
+    NSLog(@"testfunc");
 }
 
 @end

@@ -15,6 +15,7 @@
 		2B0190751DD6FD29006A0567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0190731DD6FD29006A0567 /* LaunchScreen.storyboard */; };
 		2B0190801DD6FD2A006A0567 /* helloworldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B01907F1DD6FD2A006A0567 /* helloworldTests.m */; };
 		2B01908B1DD6FD2A006A0567 /* helloworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B01908A1DD6FD2A006A0567 /* helloworldUITests.m */; };
+		2B26069B1DD9EE3D00C135D3 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B26069A1DD9EE3D00C135D3 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2B0190861DD6FD2A006A0567 /* helloworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B01908A1DD6FD2A006A0567 /* helloworldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloworldUITests.m; sourceTree = "<group>"; };
 		2B01908C1DD6FD2A006A0567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2606991DD9EDDE00C135D3 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		2B26069A1DD9EE3D00C135D3 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		2B0190641DD6FD29006A0567 /* helloworld */ = {
 			isa = PBXGroup;
 			children = (
+				2B2606951DD9C34400C135D3 /* New Group */,
 				2B0190681DD6FD29006A0567 /* AppDelegate.h */,
 				2B0190691DD6FD29006A0567 /* AppDelegate.m */,
 				2B01906B1DD6FD29006A0567 /* ViewController.h */,
@@ -110,6 +114,8 @@
 				2B0190731DD6FD29006A0567 /* LaunchScreen.storyboard */,
 				2B0190761DD6FD29006A0567 /* Info.plist */,
 				2B0190651DD6FD29006A0567 /* Supporting Files */,
+				2B2606991DD9EDDE00C135D3 /* Dog.h */,
+				2B26069A1DD9EE3D00C135D3 /* Dog.m */,
 			);
 			path = helloworld;
 			sourceTree = "<group>";
@@ -138,6 +144,13 @@
 				2B01908C1DD6FD2A006A0567 /* Info.plist */,
 			);
 			path = helloworldUITests;
+			sourceTree = "<group>";
+		};
+		2B2606951DD9C34400C135D3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 			files = (
 				2B01906D1DD6FD29006A0567 /* ViewController.m in Sources */,
 				2B01906A1DD6FD29006A0567 /* AppDelegate.m in Sources */,
+				2B26069B1DD9EE3D00C135D3 /* Dog.m in Sources */,
 				2B0190671DD6FD29006A0567 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +519,7 @@
 				2B0190911DD6FD2A006A0567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B0190921DD6FD2A006A0567 /* Build configuration list for PBXNativeTarget "helloworldTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +528,7 @@
 				2B0190941DD6FD2A006A0567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B0190951DD6FD2A006A0567 /* Build configuration list for PBXNativeTarget "helloworldUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +537,7 @@
 				2B0190971DD6FD2A006A0567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
