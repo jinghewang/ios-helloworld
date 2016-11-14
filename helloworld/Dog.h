@@ -9,6 +9,7 @@
 #import<Foundation/Foundation.h>
 
 @interface Dog : NSObject{
+    int _age;
     NSString * _name;
 }
 
@@ -16,7 +17,9 @@
 
 - (id)initWithName:(NSString * )name;
 
-- (void) getName;
+- (id)initWithNameAndAge:(NSString * )name age:(int)age;
+
+- (void) getDogInfo;
 
 - (void)getAge:(NSString * )name;
 

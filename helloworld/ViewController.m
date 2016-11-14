@@ -41,8 +41,7 @@
     [self testFunc:@"wjh" age:25];
     
     Dog *dog=[Dog alloc];
-    [[dog initWithName:@"wjh--23"] getName];
-    
+    [[dog initWithNameAndAge:@"wjh-23232" age:13] getDogInfo];
     
 }
 

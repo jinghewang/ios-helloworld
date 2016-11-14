@@ -23,8 +23,18 @@
     return self;
 }
 
-- (void)getName{
-    NSLog(@"%@",_name);
+-(id)initWithNameAndAge:(NSString *)name age:(int)age{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _age = age;
+    }
+    return self;
+}
+
+
+- (void)getDogInfo{
+    NSLog(@"name:%@ and age:%d",_name,_age);
 }
 
 -(void)getAge:(NSString *)name{
