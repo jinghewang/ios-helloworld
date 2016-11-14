@@ -23,5 +23,7 @@
 
 - (IBAction)onClick2:(id)sender;
 
+- (IBAction)onClick3:(id)sender;
+
 @end
 

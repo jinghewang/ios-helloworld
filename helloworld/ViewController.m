@@ -36,9 +36,14 @@
 
 }
 
+- (void)onClick3:(id)sender{
+    [self testFunc:@"wjh" age:25];
+    
+}
+
 
 - (void)AlertMessage:(NSString *)msg {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"显示的标题" message:msg preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"标题" message:msg preferredStyle:UIAlertControllerStyleAlert];
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         NSLog(@"点击取消");
@@ -49,20 +54,12 @@
     }]];
 
     // 由于它是一个控制器 直接modal出来就好了
-    
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
+- (void)testFunc:(NSString * )name age:(NSInteger)age{
+ 
 
-- (void)AlertMessage2:(NSString *)msg {
-    //这里说一下nil  这个东西就好比java 语言中的 null
-    UIAlertView * alertA= [[UIAlertView alloc] initWithTitle:@"标题" message:msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    
-    //添加了一个取消按钮
-    [alertA addButtonWithTitle:@"取消"];
-    //将这个UIAlerView 显示出来
-    [alertA show];
-    
 }
 
 @end
