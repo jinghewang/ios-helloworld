@@ -37,8 +37,16 @@
     NSLog(@"name:%@ and age:%d",_name,_age);
 }
 
--(void)getAge:(NSString *)name{
-    NSLog(@"%@",name);
+-(NSString *)getName{
+    return _name;
+}
+
+-(int)getAge{
+    return _age;
+}
+
++(void)showVersion{
+    NSLog(@"version is:%@",@"45");
 }
 
 

@@ -17,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
+    [Dog showVersion];
+    
+    Dog *dog = [[Dog alloc] initWithNameAndAge:@"qwx" age:15];
+    [dog getDogInfo];
+    
+    self.name.text = [dog getName];
+    self.age.text = [[NSString alloc] initWithFormat:@"%d", [dog getAge]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +50,8 @@
     
     Dog *dog=[Dog alloc];
     [[dog initWithNameAndAge:@"wjh-23232" age:13] getDogInfo];
+    
+    [Dog showVersion];
     
 }
 

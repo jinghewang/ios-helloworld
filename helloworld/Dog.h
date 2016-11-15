@@ -21,9 +21,11 @@
 
 - (void) getDogInfo;
 
-- (void)getAge:(NSString * )name;
+- (NSString *)getName;
 
+- (int)getAge;
 
++ (void)showVersion;
 
 @end
 
